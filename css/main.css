@@ -339,6 +339,41 @@ template {
 }
 
 /* shu yerda bizni fontlar keladi! */
+@font-face {
+  font-family: "Poppins Extra bold";
+  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins-ExtraBold.woff") format("woff"), url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins bold";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Semi-bold";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -379,11 +414,76 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+.header {
+  padding: 53px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__img {
+  width: 156px;
+  height: 53px;
+}
+.header .header__nav {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+}
+.header .header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.header .header__item {
+  margin-left: 85px;
+}
+.header .header__link {
+  font-family: "Poppins Regular";
+  text-decoration: none;
+  color: #404242;
+}
+.header__link:hover {
+  border-bottom: 2px solid #fec62d;
+}
+.header__link:active {
+  color: #58a9a5;
+  opacity: 0.6;
+}
+.header .header__btn {
+  background: #58a9a5;
+  border-radius: 15px;
+  padding: 21px 88px;
+  border: none;
+  color: #fff;
+}
+.header__btn:hover {
+  opacity: 0.8;
+}
+.header__btn:active {
+  opacity: 0.6;
+  color: #404242;
+}
+
 .main {
   flex-grow: 1;
+}
+
+.h11 {
+  font-family: "Poppins bold";
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
