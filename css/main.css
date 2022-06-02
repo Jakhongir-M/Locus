@@ -419,6 +419,23 @@ img {
   padding: 0 20px;
 }
 
+.btn {
+  background: #58a9a5;
+  border-radius: 15px;
+  padding: 21px 88px;
+  border: none;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
+  color: #404242;
+}
+
 .header {
   padding: 53px 0px;
   display: flex;
@@ -455,27 +472,40 @@ img {
   color: #58a9a5;
   opacity: 0.6;
 }
-.header .header__btn {
-  background: #58a9a5;
-  border-radius: 15px;
-  padding: 21px 88px;
-  border: none;
-  color: #fff;
-}
-.header__btn:hover {
-  opacity: 0.8;
-}
-.header__btn:active {
-  opacity: 0.6;
-  color: #404242;
-}
 
 .main {
   flex-grow: 1;
 }
 
-.h11 {
-  font-family: "Poppins bold";
+.hero {
+  background: url("../images/hero-right-back.png");
+  background-size: 650px 600px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  justify-content: space-around;
+  display: flex;
+}
+.hero .hero__desc {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins Extra bold";
+  font-size: 60px;
+  line-height: 105px;
+}
+.hero .hero__text {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins Regular";
+  font-size: 25px;
+  line-height: 45px;
+  margin-bottom: 50px;
+}
+.hero .left {
+  height: 600px;
+  width: 600px;
+  background: url("../images/hero-right-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .footer {
